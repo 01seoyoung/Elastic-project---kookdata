@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	color: #ecf0f1;
+}
+
+
+#main_header{
+	height: 90px;
+	
+	position: relative;
+    text-align: center;
+    line-height: 70px;
+
+    font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#main_header > label{
+    display: block;
+    height: 60px;
+    position: absolute;
+} 
+
+#main_header > label.right{
+    font-size: 30px;
+    width: 32px;
+    right: 10px; top: 10px;
+}
+
+#toggle{display: none;}
+#toggle + #wrap > #toggle_gnb_wrap{display: none;}
+#toggle:checked + #wrap > #toggle_gnb_wrap{display: block;}
+
+#toggle_gnb{
+    background: #7d9dbd;
+    padding: 5px;
+}
+#toggle_gnb > ul{overflow: hidden;}
+#toggle_gnb > ul > li{
+    width: 250px; height: 34px; float: left; 
+    font-size: 20px; font-weight: bold;
+}
+
+
+.header_gnb ul li a{
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	color: #ecf0f1;
+	margin: -3px 56px;
+	letter-spacing: 1px;
+}
+
+#toggle_gnb > ul > li > a:nth-child(1):hover{
+	color: #243b37;
+}
+
+#toggle_gnb > ul > li > a:nth-child(2):hover{
+	color: #ecf0f1;
+}
+
+#toggle_gnb > ul > li > a.active{
+	text-decoration: none; 
+	color: #243b37;
+}
+
+
+body {
+	font-size: 12px;
+	background: #2c3e50;
+}
+
+#banner {
+    font-size: 30px;
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 15px 20px
+}
+
+/* 체크박스 */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}

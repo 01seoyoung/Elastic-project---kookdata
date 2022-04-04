@@ -135,13 +135,21 @@ ul.ks-cboxtags li label{
     -webkit-tap-highlight-color: transparent;
     transition: all .2s;
 }
-ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+/*ul.ks-cboxtags li input[type="button"]:active + label {
+    border: 2px solid rgba(139, 139, 139, .3);
+    background-color: #7d9dbd;
+    color: #fff;
+    transition: all .2s;
+}*/
+
+ul.ks-cboxtags li label:hover {
     border: 2px solid rgba(139, 139, 139, .3);
     background-color: #7d9dbd;
     color: #fff;
     transition: all .2s;
 }
-ul.ks-cboxtags li input[type="checkbox"] {
+
+ul.ks-cboxtags li input[type="button"] {
     display: absolute;
     position: absolute;
     opacity: 0;
@@ -151,7 +159,12 @@ ul.ks-cboxtags li label {
     padding: 5px 10px;
     cursor: pointer;
 }
-
+.menu-container img{
+    display: block;
+    width: 100%;
+    margin:auto;
+    padding: 23px 0 ;
+}
 @media screen and (max-width: 820px){
     #category-section{
         padding: 10px 0;
